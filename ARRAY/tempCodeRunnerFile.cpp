@@ -16,9 +16,10 @@ int main()
      printf(" %d ",arr[i]);
     }
     printf("\n");
-    printf("revers array:\n");
-    for(int i=n-1;i>=0;i--)
+    int sum=0;
+    for(int i=0;i<n;i++)
     {
-     printf(" %d ",arr[i]);
+        sum=sum+arr[i];
     }
+    printf("sum of elements= %d",sum);
 }
