@@ -16,12 +16,12 @@ int main()
      printf(" %d ",arr[i]);
     }
     printf("\n");
-    int sum=0;
-    int avg;
+    printf("Odd numbers are:\n");
     for(int i=0;i<n;i++)
     {
-    sum=sum+arr[i];
-    avg=sum/n;
+        if(arr[i]%2!=0)
+        {
+        printf("%d",arr[i]);
+        }
     }
-    printf("average of elements= %d",avg);
 }
