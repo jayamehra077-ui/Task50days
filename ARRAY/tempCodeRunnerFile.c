@@ -32,7 +32,7 @@ int main()
     int arr3[50];
     for(int i=0;i<n;i++)
     {
-        arr3[i]=arr1[i]-arr2[i];
+        arr3[i]=arr1[i]+arr2[i];
     }
     for(int i=0;i<n;i++)
     {
