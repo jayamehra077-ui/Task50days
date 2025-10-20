@@ -2,7 +2,7 @@
 #include<conio.h>
 int main()
 {
- int arr[50][50],m,n=0;
+ int arr[50][50],m,n=0,sum=0;
  printf("enter no of rows:\n");
  scanf("%d",&m);
  printf("enter no of columns:\n");
@@ -25,15 +25,17 @@ printf(" %d ",arr[i][j]);
    } 
    printf(" \n ");
  }
- printf("Transpose of matrix:\n");
+ printf("sum of elements:\n");
  for(int i=0;i<m;i++)
  {
    for(int j=0;j<n;j++)
    {
+    sum=sum+arr[i][j];
 //printf("ELEMENT arr[%d][%d]:",i,j);
-printf(" %d ",arr[j][i]);
+//scanf("%d",&arr[i][j]);
+   
    } 
-   printf(" \n ");
  }
+ printf("%d",sum);
 
 }
