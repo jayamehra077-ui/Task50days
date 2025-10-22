@@ -15,6 +15,7 @@ int main()
 printf("ELEMENT arr[%d][%d]:",i,j);
 scanf("%d",&arr[i][j]);
    } 
+ 
  }
  for(int i=0;i<m;i++)
  {
@@ -25,17 +26,17 @@ printf(" %d ",arr[i][j]);
    } 
    printf(" \n ");
  }
- int max=arr[0][0];
- for(int i=0;i<m;i++)
+ printf("Even Numbers Are:\n");
+for(int i=0;i<m;i++)
  {
    for(int j=0;j<n;j++)
    {
-    if(arr[i][j]>max)
+    if(arr[i][j]%2==0)
     {
-        max=arr[i][j];
+        printf("%d",arr[i][j]);
     }
    } 
+ 
  }
- printf("Maximum Element=%d",max);
 
 }
