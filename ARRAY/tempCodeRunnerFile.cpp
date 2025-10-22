@@ -31,9 +31,9 @@ for(int i=0;i<m;i++)
  {
    for(int j=0;j<n;j++)
    {
-    if(arr[i][j]%2==0)
+    if(arr[i][j]%2!=0)
     {
-        printf("%d",arr[i][j]);
+        printf(" %d ",arr[i][j]);
     }
    } 
  
