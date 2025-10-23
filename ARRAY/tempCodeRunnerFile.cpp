@@ -11,22 +11,16 @@ int main()
         printf("\n");
     }
 
-    int a1[9];
-    int k=0;
-    printf("converted into 1D aaray:\n");
-    for(int i=0;i<3;i++)
+printf("sum of col. elements:\n");
+//int sum=0;
+for(int i=0;i<3;i++)
+{
+    int sum=0;
+    for(int j=0;j<3;j++)
     {
-        for(int j=0;j<3;j++)
-        {
-            a1[k]=a[i][j];
-            k++;
-        }
-    }
-    
-    for(int k=0;k<9;k++)
-    {
-   // printf("converted into 1D array:\n");
-    printf("%d ",a1[k]);
+        sum=sum+a[j][i];
     }
 
+printf("%d ",sum);
+}
 }
