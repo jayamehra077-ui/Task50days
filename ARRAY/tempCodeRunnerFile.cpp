@@ -1,24 +1,39 @@
 #include<stdio.h>
+#include<conio.h>
 int main()
 {
-    int a[3][3]={{1,2,3},{4,5,6},{7,8,9}};
-    for(int i=0;i<3;i++)
-    {
-        for(int j=0;j<3;j++)
-        {
-            printf("%d ",a[i][j]);
-        }
-        printf("\n");
-    }
+ int arr[50][50],m,n=0;
+ printf("enter no of rows:\n");
+ scanf("%d",&m);
+ printf("enter no of columns:\n");
+ scanf("%d",&n);
+ printf("enter elements:\n");
+ for(int i=0;i<m;i++)
+ {
+   for(int j=0;j<n;j++)
+   {
+printf("ELEMENT arr[%d][%d]:",i,j);
+scanf("%d",&arr[i][j]);
+   } 
+ }
+ for(int i=0;i<m;i++)
+ {
+   for(int j=0;j<n;j++)
+   {
+//printf("ELEMENT arr[%d][%d]:",i,j);
+printf(" %d ",arr[i][j]);
+   } 
+   printf(" \n ");
+ }
 
-printf("sum of col. elements:\n");
+printf("sum of row elements:\n");
 //int sum=0;
-for(int i=0;i<3;i++)
+for(int i=0;i<m;i++)
 {
     int sum=0;
-    for(int j=0;j<3;j++)
+    for(int j=0;j<n;j++)
     {
-        sum=sum+a[j][i];
+        sum=sum+arr[i][j];
     }
 
 printf("%d ",sum);

@@ -1,29 +1,46 @@
 #include<stdio.h>
+#include<conio.h>
 int main()
 {
-    int a[3][3]={{1,2,3},{4,5,6},{7,8,9}};
-    for(int i=0;i<3;i++)
-    {
-        for(int j=0;j<3;j++)
-        {
-            printf("%d ",a[i][j]);
-        }
-        printf("\n");
-    }
+ int arr[50][50],m,n=0;
+ printf("enter no of rows:\n");
+ scanf("%d",&m);
+ printf("enter no of columns:\n");
+ scanf("%d",&n);
+ printf("enter elements:\n");
+ for(int i=0;i<m;i++)
+ {
+   for(int j=0;j<n;j++)
+   {
+printf("ELEMENT arr[%d][%d]:",i,j);
+scanf("%d",&arr[i][j]);
+   } 
+ }
+ for(int i=0;i<m;i++)
+ {
+   for(int j=0;j<n;j++)
+   {
+//printf("ELEMENT arr[%d][%d]:",i,j);
+printf(" %d ",arr[i][j]);
+   } 
+   printf(" \n ");
+ }
 
-    int a1[9];
+
+    int x=m*n;
+    int a1[x];
     int k=0;
     printf("converted into 1D aaray:\n");
-    for(int i=0;i<3;i++)
+    for(int i=0;i<m;i++)
     {
-        for(int j=0;j<3;j++)
+        for(int j=0;j<n;j++)
         {
-            a1[k]=a[i][j];
+            a1[k]=arr[i][j];
             k++;
         }
     }
     
-    for(int k=0;k<9;k++)
+    for(int k=0;k<x;k++)
     {
    // printf("converted into 1D array:\n");
     printf("%d ",a1[k]);
