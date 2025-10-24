@@ -25,17 +25,15 @@ printf(" %d ",arr[i][j]);
    } 
    printf(" \n ");
  }
-
-printf("sum of row elements:\n");
-//int sum=0;
-for(int i=0;i<m;i++)
-{
-    int sum=0;
-    for(int j=0;j<n;j++)
+     printf("diagonal elements are:\n");
+    for(int i=0;i<m;i++)
     {
-        sum=sum+arr[i][j];
+        printf("%d ",arr[i][i]);
     }
+   // for(int i=0;i<n;i++)
+   // {
+     //   printf("%d ",arr[i][n-i-1]);
+    //}
 
-printf("%d ",sum);
-}
+
 }
