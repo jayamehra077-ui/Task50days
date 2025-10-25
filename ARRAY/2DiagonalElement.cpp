@@ -25,6 +25,15 @@ printf(" %d ",arr[i][j]);
    } 
    printf(" \n ");
  }
- 
+     printf("diagonal elements are:\n");
+    for(int i=0;i<m;i++)
+    {
+        printf("%d ",arr[i][i]);
+    }
+    for(int i=0;i<n;i++)
+   {
+       printf("%d ",arr[i][n-i-1]);
+  }
+
 
 }
