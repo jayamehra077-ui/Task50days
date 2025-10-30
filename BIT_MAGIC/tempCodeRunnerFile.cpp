@@ -1,17 +1,26 @@
 #include<stdio.h>
 int main()
 {
-    int x,y;
-    printf("enter 1st num. : ");
-    scanf("%d",&x);
+    int arr[20],i,n,x=0,y=0;
+    printf("enter no. of emenents in array:\n");
+    scanf("%d",&n);
+    printf("enter sorted elements from 0 in which one no. is lost :\n");
+    for(i=0;i<n;i++)
+    {
+        scanf("%d",&arr[i]);
+    }
+    for(i=0;i<n;i++)
+    {
+        printf("%d",arr[i]);
+    }
     printf("\n");
-    printf("enter 2nd num. : ");
-    scanf("%d",&y);
-    printf("X= %d and Y = %d ",x,y);
-    x=x^y;
-    y=x^y;
-    x=x^y;
-    printf("\n");
-    printf("after swapping:\n");
-    printf("X= %d and Y = %d ",x,y);
+    for(i=0;i<n;i++)
+    {
+      x=x^i;
+    }
+    for(i=0;i<n-1;i++)
+    {
+      y=y^i;
+    }
+    printf("missing no. is= %d ",x^y);
 }
